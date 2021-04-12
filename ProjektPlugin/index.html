@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/granim.min.js"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  <title>Granim.js</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#Opluginie">O pluginie</a></li>
+          <li><a href="#Instalacja">Instalacja</a></li>
+          <li><a href="#CaseStudy">Case Study</a></li>
+          <li><a href="#Dokumentacja">Dokumentacja</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="o-mnie">
+
+    <div class="header-text">
+
+      <p class="tytuł">Twórz piękne przejścia gradnientowe za pomocą</p>
+      <p class="granim">Granim.js</p>
+
+    </div>
+
+  </header>
+
+  <section id="Opluginie">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-12">
+
+          <h2>O pluginie</h2>
+          <h3>Czym jest Granim.js ?</h3>
+          <p>Granim.js jest to plugin JS stosowany do tworzenia gradientów i interaktywnych animacji .
+            Dzięki Granim.js możemy stworzyć niestandardowe przejścia gradientowe w pełnym kolorze.
+            Istnieją różne metody, których można użyć, aby gradient reagował na różne zdarzenia użytkownika,
+            takie jak kliknięcie przycisku. </p>
+          <h3>Czym jest Gradient ?</h3>
+          <p>Jest to rozwiązanie stosowane w grafice komputerowej, polegające na wypełnieniu
+            określonego obszaru płynnym przejściem pomiędzy co najmniej dwoma kolorami.
+            Kształt tego wypełnienia może być rozmaity począwszy od prostego równomiernego
+            Przejścia pomiędzy przeciwległymi bokami prostokąta a skończywszy na przejściu
+            Wzdłuż linii krzywej, rozchodzeniu się promienistym itp.</p>
+          <h4>Autorem pluginu jest: Benjamina Blonde</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Instalacja">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-3 col-md-10 col-md-offset-1 col-sm-12">
+
+          <h2>Jak zainstalować biblioteke Granim.js ?</h2>
+          <b>
+            <div class="col-lg-6">
+              <h3><b>Korzystanie z wersji hostowej aby skorzystać z Granim należy umieścić poniższy kod w
+                  nagłówku kodu HTML:</b></h3>
+            </div>
+            <div class="col-lg-6">
+              <pre><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqqZMZ19scR4PsZChSR7A=="crossorigin=""/&gt;
+   
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="crossorigin=""&gt;&lt;/script&gt;
+</pre></code>
+            </div>
+            <div class="col-lg-6">
+              <h3><b>Korzystanie z pobranej wersji:</b></h3>
+            </div>
+            <div class="col-lg-6">
+
+              <button class="button"><a href="https://github.com/sarcadass/granim.js/archive/v2.0.0.zip">v
+                  2.0.0</a></button>
+              <button class="button"><a href="https://github.com/sarcadass/granim.js/archive/v1.1.1.zip">v
+                  1.1.1</a></button>
+              <button class="button"><a href="https://github.com/sarcadass/granim.js/archive/v1.1.0.zip">v
+                  1.1.0</a></button>
+              <button class="button"><a href="https://github.com/sarcadass/granim.js/archive/v1.0.6.zip">v
+                  1.0.6</a></button>
+            </div>
+            <div class="col-lg-12">
+              <h4><b>Jeśli chcesz pobrać pełny kod źródłowy, w tym testy jednostkowe, pliki do debugowania, skrypty
+                  kompilacji itp, możesz znaleźć go na:</b></h4>
+              <div>
+                <button class="buttonGit col-lg-12"><a href="https://github.com/sarcadass/granim.js">Repozytorium
+                    github</a></button>
+              </div>
+            </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="CaseStudy">
+    <div class="container">
+      <div class="row">
+        <h2>Case Study</h2>
+        <div class="col-lg-6 ">
+          <canvas id="canvas-image-blending"></canvas>
+          <canvas id="canvas-image"></canvas>
+          <canvas id="canvas-images"></canvas>
+          <script src="js/granim.js"></script>
+
+        </div>
+        <div class="col-lg-6 opis ">
+          <h3>Efekt krok po kroku</h3>
+          <b>
+            <p>Krok 1: W HTML tworzymy blok canvas o id np. "canavas-image-blending"</p>
+          </b>
+          <b>
+            <p>Krok 2: Tworzymy styl do bloku "canavas-image-blending" ustawiamy szerokość, wysokość oraz określamy
+              kolejność elementów wzdłuż osi z.</p>
+          </b>
+          <b>
+            <p>Krok 3: Tworzymy skrypt w js, który będzie odpowiadał za animacje</p>
+          </b>
+          <p>1.W sekcji element
+            wybieramy blok dla którego ustawiamy gradient
+            w naszym przypadku będzie to "#canavas-image-blending".</p>
+          <p>2.W sekcji direction wybieramy kierunek gradientu, jakie są do wyboru można
+            przeczytać w dokumentacji my wybieramy "top-bottom".</p>
+          <p>W sekcji isPausedWhenNotInView określamy czy animacja ma się zatrzymywać
+            gdy nie jesteśmy w widoku okna. My wybieramy "true"</p>
+          <p>4.Dodajemy zdjęcie dla którego chcemy tworzyć gradient, w sekcji
+            source dodajemy lokalizacje zdjęcia a w sekcji blendingMide jak obraz ma
+            się łączyć z gradientem my ustawiamy "multiply".</p>
+          <p>5.W sekcji gradents wybieramy kolory które mają się łączyć w gradient</p>
+          <p>6.W sekcji transitionSpeed określamy czas trwania animacji podczas zmiany stanu.</p>
+          <pre>    <code>
+            $(function () {
+                var granimInstance = new Granim({
+                    element: '#canvas-image-blending',
+                    direction: 'top-bottom',
+                    isPausedWhenNotInView: true,
+                    image : {
+                        source: 'img/obraz.jpg',
+                        blendingMode: 'multiply',
+                    },
+                    states : {
+                        "default-state": {
+                            gradients: [
+                                ['#29323c', '#485563'],
+                                ['#FF6B6B', '#556270'],
+                                ['#80d3fe', '#7ea0c4'],
+                                ['#f0ab51', '#eceba3']
+                            ],
+                            transitionSpeed: 7000
+                        }
+                    }
+                });
+            });
+        </code>
+    </pre>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="Dokumentacja">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12">
+          <h2>Dokumentacja</h2>
+          <h3>API v2.0.0</h3>
+          <table class="table my-5>
+            <thead>
+              <tr>
+                <th scope=" col">
+            </th>
+            <th scope="col">Własności</th>
+            <th scope="col">Domyślnie</th>
+            <th scope="col">Typ</th>
+            <th scope="col">Opis</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">element</th>
+                <td>/</td>
+                <td>string or HTMLCanvasElement</td>
+                <td>Selektor CSS dla canvas element lub HTMLCanvasElement sama (np „# granim-canvas” lub
+                  document.querySelector ('# granim-canvas')), który zostanie użyty do animacji gradientu.</td>
+              </tr>
+              <tr>
+                <th scope="row">nazwa</th>
+                <td>false</td>
+                <td>string</td>
+                <td>To jest przedrostek używany dla nazwy klasy ciemności / jasności dodanej do
+                  options.elToSetClassOnelement w zależności od średniej jasności gradientu, klasa zostanie
+                  zaktualizowana podczas animacji.
+                  Jeśli nie ustawisz nazwy, klasa nie zostanie ustawiona.</td>
+              </tr>
+              <tr>
+                <th scope="row">elToSetClassOn</th>
+                <td>body</td>
+                <td>string</td>
+                <td>Element do włączenia klasy ciemności / jasności (np „# canvas-wrapper”)
+                  Przydatne tylko wtedy, gdy ustawiszNazwa.</td>
+              </tr>
+              <tr>
+                <th scope="row">kierunek</th>
+                <td>diagonal</td>
+                <td>string</td>
+                <td>Orientację gradientu, możesz wybrać między:
+                  <ul>
+                    <li>przekątna</li>
+                    <li>lewo-prawo</li>
+                    <li>góra-doł</li>
+                    <li>promieniowy</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">customDirection</th>
+                <td>/</td>
+                <td>object</td>
+                <td>Pozwala dostosować kierunek gradientu za pomocą pikseli lub wartości procentowych.Ta właściwość jest
+                  wymagana, gdy właściwośćkierunek jest ustawione nazwyczaj.</td>
+              </tr>
+              <tr>
+                <th scope="row">isPausedWhenNotInView</th>
+                <td>false</td>
+                <td>boolean</td>
+                <td>Czy animacja zatrzymuje się, gdy nie jest w widoku okna?
+                  (Pomimo tego parametru animacja zawsze zatrzymuje się przy zmianie karty).</td>
+              </tr>
+              <tr>
+                <th scope="row">scrollDebounceThreshold</th>
+                <td>300</td>
+                <td>int</td>
+                <td>Jaki jest próg odbicia przewijania (w ms)?
+                  Przydatne tylko wtedy, gdyisPausedWhenNotInView jest ustawione na prawdziwe.</td>
+              </tr>
+              <tr>
+                <th scope="row">stateTransitionSpeed</th>
+                <td>1000</td>
+                <td>int</td>
+                <td> Czas trwania animacji przy zmianie stanu (w ms).</td>
+              </tr>
+              <tr>
+                <th scope="row">defaultStateName</th>
+                <td>stan domyślny</td>
+                <td>string</td>
+                <td>Nazwa stanu domyślnego.</td>
+              </tr>
+              <tr>
+                <th scope="row">states</th>
+                <td>/</td>
+                <td>objekt</td>
+                <td>Obiekt zawierający wszystkie stany, zobacz więcej informacji poniżej.</td>
+              </tr>
+              <tr>
+                <th scope="row">image</th>
+                <td>/</td>
+                <td>object</td>
+                <td>Obiekt zawierający opcje obrazu, zobacz więcej informacji poniżej.</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Opcje statyczne</h2>
+          <table class="table my-5>
+            <thead>
+              <tr>
+                <th scope=" col">
+            </th>
+            <th scope="col">Własności</th>
+            <th scope="col">Domyślnie</th>
+            <th scope="col">Rodzaj</th>
+            <th scope="col">Opis</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">gradienty</th>
+                <td>/</td>
+                <td>Array of Arrays</td>
+                <td>Możesz ustawić gradienty na dwa różne sposoby:
+                  1. Prosty sposób , ustawiasz tylko kolory, które będą równomiernie rozłożone, np.
+                  <pre><code>
+                  [
+          
+                    ['rgba(255, 153, 102, .33)', '#ff5e62', ...],
+                    ['hsla(144, 100%, 47%, .75)', 'hsl(210, 96%, 46%)', ...],
+                    ...
+                  ] 
+                </code></pre>
+                  2. W skomplikowany sposób ustawiasz kolory i ich pozycje (w zakresie od 0 do 1), np
+                  <pre><code>
+                  [
+                    [
+                      { color: 'rgba(255, 153, 102, .33)', pos: .5 },
+                      { color: '#ff5e62', pos: 1 }, ...
+                    ], [
+                      { color: 'hsla(144, 100%, 47%, .75)', pos: .1 },
+                      { color: 'hsl(210, 96%, 46%)', pos: .6 }, ...
+                    ],
+                    ...
+                  ]
+                </code></pre>
+                  Dopuszczalne kolory to: szesnastkowy, rgb, rgba, hsl i hsla. Wszystkie gradienty powinny zawierać tę
+                  samą liczbę kolorów.
+
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">TransitionSpeed</th>
+                <td>5000</td>
+                <td>int</td>
+                <td>Czas przejścia między każdym gradientem (w ms).</td>
+              </tr>
+              <tr>
+                <th scope="row">loop</th>
+                <td>true</td>
+                <td>Boolean</td>
+                <td>Kiedy animacja dotarła do ostatniego gradientu, czy się powtarza?</td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Opcje obrazka</h2>
+          <table class="table my-5>
+            <thead>
+              <tr>
+                <th scope=" col">
+            </th>
+            <th scope="col">Własności</th>
+            <th scope="col">Domyślnie</th>
+            <th scope="col">Rodzaj</th>
+            <th scope="col">Opis</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">source</th>
+                <td>/</td>
+                <td>string</td>
+                <td>Źródło Twojego obrazu, np „img / 800x200.jpg”.</td>
+              </tr>
+              <tr>
+                <th scope="row">position</th>
+                <td>["center","center"]</td>
+                <td>array</td>
+                <td>Pozycja obrazu w kanwie, reprezentowana jako plik [x, y] array.
+                  Możliwe wartości:
+                  <ul>
+                    <li>left</li>
+                    <li>right</li>
+                    <li>center</li>
+                  </ul>
+                  Możliwe wartości y:
+                  <ul>
+                    <li>top</li>
+                    <li>center</li>
+                    <li>bootom</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">stretchMode</th>
+                <td>/</td>
+                <td>string</td>
+                <td>
+                  Czy obraz musi się rozciągać? Ta opcja jest przydatna w przypadku projektowania płynnego /
+                  responsywnego. Reprezentowany jako[x, y]szyk.
+                  Możliwe wartościx i y:
+                  <ul>
+                    <li>none</li>
+                    <li>stretch</li>
+                    <li>stretch-if-smaller</li>
+                    <li>stretch-if-bigger</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h2>Callback</h2>
+
+          <table class="table my-5>
+            <thead>
+              <tr>
+                <th scope=" col">
+            </th>
+            <th scope="col">Własności</th>
+            <th scope="col">Domyślnie</th>
+            <th scope="col">Rodzaj</th>
+            <th scope="col">Opis</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">onStart</th>
+                <td>false</td>
+                <td>function</td>
+                <td>Wywoływane po rozpoczęciu animacji.</td>
+              </tr>
+              <tr>
+                <th scope="row">onGradientChange</th>
+                <td>false</td>
+                <td>function</td>
+                <td>Wyzwalane, gdy gradient zmienia się i zapętla.</td>
+              </tr>
+              <tr>
+                <th scope="row">onEnd</th>
+                <td>false</td>
+                <td>function</td>
+                <td>Wywoływane po zakończeniu animacji.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>Bartosz Antkiewicz&copy; 2020</p>
+    </div>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+  </script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
